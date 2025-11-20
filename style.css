@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Hk Grotesk';
+    font-style: normal;
+    font-weight: 1600;
+    src: url('./fonts/HKGrotesk/HKGrotesk-Regular.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+html {
+    
+    box-sizing: border-box;
+    font-family: 'Hk Grotesk' , serif;
+    color: aliceblue;
+    
+    font-size: 20px;
+}
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 0;
+}
+
+.nav__items {
+    display: flex;
+    list-style: none;
+}
+.nav__link {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.header {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/desert-doom-sand-dunes-dark-background-monochrome-landscape-3440x1440-6409.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+.work{
+    padding-top: 50px;
+    background-color: black;
+}
+.header__text {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+}
+.header__text p {
+    margin: 1.5rem 0 3.5rem;
+    max-width: 700px;
+    font-family: 'Jost', sans-serif;
+    font-size: var(--font-size-medium);
+}
+.work__box {
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+}
+.work__code {
+    display: block;
+    height: 3rem;
+    
+}
+.work__links {
+    display: flex;
+    align-items: center;
+}
+
+.work__list {
+    list-style-position: inside;
+    
+}
+
+.row {
+    max-width:1180px;
+    margin: 0 auto;
+}
+
+.work__image-box{
+    margin-left: 10%;
+}
+#projets{
+    font-size: 40px;
+}
