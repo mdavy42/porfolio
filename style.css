@@ -10,9 +10,19 @@
     padding: 0;
     box-sizing: inherit;
     
+}@media(min-width: 901px) {
+    .work__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
 }
-html {
-    
+
+@media(max-width: 900px) {
+    .work__code {
+        height: 4rem;
+    }
+}
+html {  
     box-sizing: border-box;
     font-family: 'Hk Grotesk' , serif;
     color: aliceblue;
@@ -22,6 +32,8 @@ html {
 img {
     object-fit: contain;
     max-width: 100%;
+    width: 626px;
+    height: 404px;
 }
 .nav {
     display: flex;
@@ -65,7 +77,6 @@ img {
     margin: 1.5rem 0 3.5rem;
     max-width: 700px;
     font-family: 'Jost', sans-serif;
-    font-size: var(--font-size-medium);
 }
 .work__box {
     display: flex;
@@ -97,4 +108,45 @@ img {
 }
 #projets{
     font-size: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 6rem 0 3rem;
+
+    background-color: black;
+}
+
+.footer__social-links {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    list-style: none;
+}
+
+.footer__social-link-item:not(:last-of-type) {
+    margin-right: 2rem;
+}
+
+.footer__social-image {
+    height: 4rem;
+}
+
+.footer__github-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__github-buttons iframe {
+    height: 2.5rem;
+    width: 84px;
+    transform: translateY(3px);
+}
+a{
+    color: aliceblue;
+}
+#imageLowatem{
+    width: 150%;
+    height: 150%;
+
 }
